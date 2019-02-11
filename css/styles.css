@@ -4,21 +4,111 @@
 
 body {
   margin-top: 0px;
+  font-family: verdana,arial,sans-serif,helvetic;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main {
+  display: flex;
+  width: 1000px;
+  border: 1px red solid;
+}
+
+.left-column{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 300px;
+}
+
+#profile {
+  display: flex;
+  font-size: 11px;
+
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  margin-left: 20px;
+  margin-right: 0;
+}
+
+#box {
+  flex-direction: flex-end;
+  border: solid;
+  border-width: 2px;
+  border-color: black;
+  padding: 25px 80px 25px 80px;
+  margin: 10px 0 0 0;
+}
+
+#profile h1 {
+  font-size: 16px;
+}
+
+/* #profile img {
+  width: 170px;
+  height: 138px;
+} */
+
+#viewMy {
+  margin-left: 15px;
+}
+
+#viewMy a{
+  text-decoration: none;
+  font-weight: bold
+}
+
+#infotext {
+  align-self: flex-end;
+  margin-left: 10px;
+}
+
+#lastlogin{
+  margin-top: 50px;
+}
+
+#namePhoto {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#nameInfo {
+  flex-direction: column;
+  margin-left: 5px;
+  margin-top: 16px;
+  align-items: center;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 700px;
+}
+
+#blog-text {
+  font-size: 10px;
+  margin: 10px 0 10px 0;
+}
+
+#blog-text a{
+  font-weight: bold;
 }
 
 .nav-bar {
   display: flex;
   margin-top: 0px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 800px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  width: 1000px;
   height: 110px;
   background-color: #003399;
   color: white;
   justify-content: space-between;
   padding: 5px;
   font-size: 8pt;
-  font-family: verdana,arial,sans-serif,helvetica
+
 }
 
 .nav-bar a {
@@ -41,9 +131,9 @@ body {
 .nav-bar-mini {
   display: flex;
   margin-top: 0px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 800px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  width: 1000px;
   height: 20px;
   background-color: #6699cc;
   color: black;
@@ -58,4 +148,8 @@ body {
   align-items: center;
   text-decoration: none;
   color: white;
+}
+
+.bold {
+  font-weight: bold;
 }
